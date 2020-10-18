@@ -1,6 +1,5 @@
 const service = {}
 const axios = require('axios');
-const newsMock = require('../mocks/news.json')
 
 service.getAll = async () => {
         try {
