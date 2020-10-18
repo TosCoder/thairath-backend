@@ -21,6 +21,7 @@ service.getAll = async () => {
                              {
                                  _id: item.node.id,
                                  display: item.node.display_url,
+                                 dimensions: item.node.dimensions,
                                  title: item.node.title ,
                                  type: item.node.product_type || 'post',
                                  caption: item.node.edge_media_to_caption.edges,
@@ -37,11 +38,13 @@ service.getAll = async () => {
                              {
                                  _id: item.node.id,
                                  display: item.node.display_url,
+                                 dimensions: item.node.dimensions,
                                  title: item.node.title,
                                  type: item.node.product_type,
                                  caption: item.node.edge_media_to_caption.edges,
                                  thumbnail_src: item.node.thumbnail_src,
-                                 thumbnail_resources: item.node.thumbnail_resources
+                                 thumbnail_resources: item.node.thumbnail_resources,
+                                 video_url: item.node.video_url
                              }
                          )
                      })
